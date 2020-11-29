@@ -56,28 +56,28 @@ a.problems:hover { text-decoration:none;color:#202020;border-bottom:1px solid #3
 /*** Works on common browsers ***/
 ::selection {
     background-color: #000000;
-    color: #fffff;
+    color: #ffffff;
 }
 
 /*** Mozilla based browsers ***/
 ::-moz-selection {
     background-color: #000000;
-    color: #fffff;
+    color: #ffffff;
 }
 
 /***For Other Browsers ***/
 ::-o-selection {
     background-color: #000000;
-    color: #fffff;
+    color: #ffffff;
 }
 
 ::-ms-selection {
     background-color: #000000;
-    color: #fffff;
+    color: #ffffff;
 }
 
 /*** For Webkit ***/
 ::-webkit-selection {
     background-color: #000000;
-    color: #fffff;
+    color: #ffffff;
 }

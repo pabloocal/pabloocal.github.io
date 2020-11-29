@@ -52,3 +52,32 @@ td { vertical-align: top }
 .problems { float:right }
 a.problems { text-decoration:none;color:#909090;border-bottom:0px solid #aaaaaa;font-family:helvetica,arial }
 a.problems:hover { text-decoration:none;color:#202020;border-bottom:1px solid #303030 }
+
+/*** Works on common browsers ***/
+::selection {
+    background-color: #000000;
+    color: #fffff;
+}
+
+/*** Mozilla based browsers ***/
+::-moz-selection {
+    background-color: #000000;
+    color: #fffff;
+}
+
+/***For Other Browsers ***/
+::-o-selection {
+    background-color: #000000;
+    color: #fffff;
+}
+
+::-ms-selection {
+    background-color: #000000;
+    color: #fffff;
+}
+
+/*** For Webkit ***/
+::-webkit-selection {
+    background-color: #000000;
+    color: #fffff;
+}

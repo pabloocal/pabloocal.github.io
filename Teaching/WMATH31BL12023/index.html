@@ -6,6 +6,22 @@
   <link href="../../_css/pso.css" rel="stylesheet" type="text/css">
   <link rel="icon" href="../../favicon.png">
 
+<script>
+
+function schemes(){
+  var homework = parseInt(document.getElementById("homework").value);
+  var discussion = parseInt(document.getElementById("discussion").value);
+  var midterm1 = parseInt(document.getElementById("midterm1").value);
+  var midterm2 = parseInt(document.getElementById("midterm2").value);
+  var final = parseInt(document.getElementById("final").value);
+  var grade1 = Math.round(((homework * 2.5) + (discussion * 1.5) + (midterm1 / 10) * 1.5 + (midterm2 / 10) * 1.5 + (final / 10) * 3.0 ) * 100) / 100;
+  var grade2 = Math.round(((homework * 2.5) + (discussion * 1.5) + (Math.max(midterm1, midterm2) / 10) * 2.5 + ((final / 10) * 3.5) ) * 100) / 100;
+  var grade3 = Math.round(((homework * 2.5) + (discussion * 1.5) + ((final / 10) * 6.0) ) * 100) / 100;
+  document.getElementById("result").textContent = "Grading Scheme 1: " + grade1 +" - Grading Scheme 2: " +grade2 +" - Grading Scheme 3: " +grade3;
+}
+
+</script>
+
 </head>
 
 <body>
@@ -87,6 +103,9 @@ Office hours&nbsp;:&nbsp; TBD
   <tr><td class="time"></td><td><a href="#Resources">7. Resources</a><br />
   <span class="prtitle"></span></td></tr>
 
+  <tr><td class="time"></td><td><a href="#Grading_Schemes">8. Grading Schemes</a><br />
+  <span class="prtitle"></span></td></tr>
+
 </table>
 
   </div>
@@ -139,6 +158,7 @@ The following are additional materials closely related to the class notes.
   <li><a href="https://drive.google.com/file/d/1h4yV-zFbazFPl0ytlAltyrYLJ0oI__Bo/view">Angles, sine, and cosine, in the unit circle</a> by <a href="https://sites.google.com/site/cazelais/"><b>Gilles Cazelais</b></a>.</li>
   <li><a href="https://drive.google.com/file/d/1MRXkt3QOTZmblfrfL5MTPZ1oiEfWjwll/view">Trigonometry in the unit circle</a> by <a href="https://sites.google.com/site/cazelais/"><b>Gilles Cazelais</b></a>.</li>
   <li><a href="https://drive.google.com/file/d/1Wk3bUq02AjLBvsRkUZnDcRCB7XO48DtB/view">Proof of the trigonometric identities for sum and difference angles</a> by <a href="https://sites.google.com/site/cazelais/"><b>Gilles Cazelais</b></a>.</li>
+  <li><a href="https://saylordotorg.github.io/text_intermediate-algebra/s12-04-binomial-theorem.html">Binomial Theorem</a> by <a href="https://www.saylor.org/"><b>Saylor Academy</b></a>.</li>
 </ul>
 
   </div>
@@ -406,6 +426,32 @@ There are many resources available for a student at UCLA, I encourage you to use
   <p> 
 I also encourage you to form study groups with your classmates. However, please keep in mind that you will only learn how to do the exercises if you try them on your own: without trying, looking up the solutions or copying others' work is absolutely useless.
   </p>
+  </div>
+  
+ </div>
+
+  <div class="text">
+
+  <div class="pagetitle" id="Grading_Schemes">
+Grading Schemes
+  </div>
+  
+  <div class="textblock">
+  <p> 
+You can compute your final grade using the calculator below. Please input the average of your homework assignments (out of 10), the average of your discussion assignments (out of 10), the score of your first midterm (out of 100), the score of your second midterm (out of 100), and the score of your final (out of 100). Then, click "Compute grading schemes" to see the three grading schemes (out of 100).
+  </p>
+<ul style="list-style-type:none">
+  <li><label>Homework average:</label> <input type="text" id="homework" size="1"></li>
+  <li><label>Discussion average:</label> <input type="text" id="discussion" size="1"></li>
+  <li><label>Midterm 1:</label> <input type="text" id="midterm1" size="1"></li>
+  <li><label>Midterm 2:</label> <input type="text" id="midterm2" size="1"></li>
+  <li><label>Final:</label> <input type="text" id="final" size="1"></li>
+</ul>
+<ul style="list-style-type:none">
+  <li><button onClick="schemes()">Compute grading schemes</button></li>
+</ul>
+<p id="result">
+</p>
   </div>
   
  </div>

@@ -14,10 +14,10 @@ function schemes(){
   var midterm1 = parseInt(document.getElementById("midterm1").value);
   var midterm2 = parseInt(document.getElementById("midterm2").value);
   var final = parseInt(document.getElementById("final").value);
-  var grade1 = Math.round(((homework * 2.5) + (discussion * 1.5) + (midterm1 / 10) * 1.5 + (midterm2 / 10) * 1.5 + (final / 10) * 3.0 ) * 100) / 100;
-  var grade2 = Math.round(((homework * 2.5) + (discussion * 1.5) + (Math.max(midterm1, midterm2) / 10) * 2.5 + ((final / 10) * 3.5) ) * 100) / 100;
-  var grade3 = Math.round(((homework * 2.5) + (discussion * 1.5) + ((final / 10) * 6.0) ) * 100) / 100;
-  document.getElementById("result").textContent = "Grading Scheme 1: " + grade1 +" - Grading Scheme 2: " +grade2 +" - Grading Scheme 3: " +grade3;
+  var grade1 = Math.round((homework * 25) + (discussion * 15) + (midterm1 * 15) + (midterm2 * 15) + (final * 30)) / 100.0;
+  var grade2 = Math.round((homework * 25) + (discussion * 15) + (Math.max(midterm1, midterm2) * 25) + (final * 35)) / 100.0;
+  var grade3 = Math.round((homework * 25) + (discussion * 15) + (final * 60)) / 100.0;
+  document.getElementById("result").textContent = "Grading Scheme 1: " +grade1 +" - Grading Scheme 2: " +grade2 +" - Grading Scheme 3: " +grade3;
 }
 
 </script>
@@ -432,7 +432,7 @@ Grading Schemes
   
   <div class="textblock">
   <p> 
-You can compute your final grade using the calculator below. Please input the average of your homework assignments (out of 10), the average of your discussion assignments (out of 10), the score of your first midterm (out of 100), the score of your second midterm (out of 100), and the score of your final (out of 100). Then, click "Compute grading schemes" to see the three grading schemes (out of 100).
+You can compute your final grade using the calculator below. Please input the average of your homework assignments (out of 100), the average of your discussion assignments (out of 100), the score of your first midterm (out of 100), the score of your second midterm (out of 100), and the score of your final (out of 100). Then, click "Compute grading schemes" to see the three grading schemes (out of 100).
   </p>
 <ul style="list-style-type:none">
   <li><label>Homework average:</label> <input type="text" id="homework" size="1"></li>

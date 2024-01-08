@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+
+<head>
+
+  <title>Integration and Infinite Series - Winter 2024</title>
+  <link href="../../_css/pso.css" rel="stylesheet" type="text/css">
+  <link rel="icon" href="https://pabloocal.github.io/web-documents/favicon.png">
+
+<script>
+
+function schemes(){
+  var homework = parseInt(document.getElementById("homework").value);
+  var discussion = parseInt(document.getElementById("discussion").value);
+  var midterm1 = parseInt(document.getElementById("midterm1").value);
+  var midterm2 = parseInt(document.getElementById("midterm2").value);
+  var final = parseInt(document.getElementById("final").value);
+  var grade1 = Math.round((homework * 25) + (discussion * 15) + (midterm1 * 15) + (midterm2 * 15) + (final * 30)) / 100.0;
+  var grade2 = Math.round((homework * 25) + (discussion * 15) + (Math.max(midterm1, midterm2) * 25) + (final * 35)) / 100.0;
+  var grade3 = Math.round((homework * 25) + (discussion * 15) + (final * 60)) / 100.0;
+  document.getElementById("result").textContent = "Grading Scheme 1: " +grade1 +" - Grading Scheme 2: " +grade2 +" - Grading Scheme 3: " +grade3;
+}
+
+</script>
+
+</head>
+
+<body>
+
+<div style="width:100%;margin-top:0px;min-width:720px;border-bottom:1px solid #cccccc">
+</div>
+
+
+<div class="container">
+<div class="wrapper">
+
+
+ <div style="margin-top:65px">
+
+  <div style="margin-bottom:15px;font-size:14px;letter-spacing:1px;text-align:center;font-family:;color:#707070">
+ UNIVERSITY OF CALIFORNIA, LOS ANGELES - WINTER 2024
+  </div>
+  <div style="margin-bottom:15px;font-size:40px;text-align:center;">
+ MATH 31B:2 - Integration and Infinite Series
+  </div>
+  <div style="margin-bottom:5px;font-size:16px;letter-spacing:;text-align:center;color:#606060">
+ Instructor&nbsp;:&nbsp; <a href="https://pabloocal.github.io/">Pablo S. Ocal</a>
+  </div>
+  <div style="margin-bottom:5px;font-size:16px;letter-spacing:;text-align:center;color:#606060">
+Office hours&nbsp;:&nbsp; W 8:00-9:45 am (MS 6627)
+  </div>
+  <div style="margin-bottom:5px;font-size:16px;letter-spacing:;text-align:center;color:#606060">
+ Teaching Assistant&nbsp;:&nbsp; <a href="http://www.math.ucla.edu/~indraneel">Indraneel Tambe</a>
+  </div>
+  <div style="margin-bottom:5px;font-size:16px;letter-spacing:;text-align:center;color:#606060">
+Office hours&nbsp;:&nbsp; TBD
+  </div>
+  <div style="margin-bottom:5px;font-size:16px;letter-spacing:;text-align:center;color:#606060">
+ Teaching Assistant&nbsp;:&nbsp; <a href="http://www.math.ucla.edu/~victoriaquijano">Victoria Quijano</a>
+  </div>
+  <div style="margin-bottom:5px;font-size:16px;letter-spacing:;text-align:center;color:#606060">
+Office hours&nbsp;:&nbsp; TBD
+  </div>
+  <div style="margin-bottom:5px;font-size:16px;letter-spacing:;text-align:center;color:#606060">
+ Teaching Assistant&nbsp;:&nbsp; <a href="">Bharthi Srinivasan</a>
+  </div>
+  <div style="margin-bottom:5px;font-size:16px;letter-spacing:;text-align:center;color:#606060">
+Office hours&nbsp;:&nbsp; TBD
+  </div>
+
+ </div>
+
+  <div class="text">
+
+<table class="tbl">
+
+  <tr><td class="time"></td><td><b>Table of Contents</b><br />
+  <span class="prtitle"></span></td></tr>
+
+  <tr><td class="time"></td><td><a href="#Description">1. Description</a><br />
+  <span class="prtitle"></span></td></tr>
+
+  <tr><td class="time"></td><td><a href="#Class_Notes">2. Class Notes</a><br />
+  <span class="prtitle"></span></td></tr>
+
+  <tr><td class="time"></td><td><a href="#Schedule">3. Schedule</a><br />
+  <span class="prtitle"></span></td></tr>
+
+  <tr><td class="time"></td><td><a href="#Homework">4. Homework</a><br />
+  <span class="prtitle"></span></td></tr>
+
+  <tr><td class="time"></td><td><a href="#Discussion">5. Discussion</a><br />
+  <span class="prtitle"></span></td></tr>
+
+  <tr><td class="time"></td><td><a href="#Exams">6. Exams</a><br />
+  <span class="prtitle"></span></td></tr>
+
+  <tr><td class="time"></td><td><a href="#Resources">7. Resources</a><br />
+  <span class="prtitle"></span></td></tr>
+
+  <tr><td class="time"></td><td><a href="#Grading_Schemes">8. Grading Schemes</a><br />
+  <span class="prtitle"></span></td></tr>
+
+</table>
+
+  </div>
+
+  <div class="text">
+
+  <div class="pagetitle" id="Description">
+ Description
+  </div>
+  
+  <div class="textblock">
+  <p> 
+The course on <a href="https://catalog.registrar.ucla.edu/course/2023/MATH31B"><em>Integration and Infinite Series</em></a> will treat, among others, methods of differentiation, methods of integration, series and their convergence, and relations between these concepts. The prerequisites required for this course are covered in Math 31A.
+  </p>
+  <p>
+The course will have weekly classes on
+<ul style="list-style-type:none">
+  <li><b>Mondays, Wednesdays, and Fridays in <a href="https://map.ucla.edu/?k=false&id=250">MS</a>, room 4000A, from 10:00 to 10:50 am.</b></li>
+</ul>
+  </p>
+  <p> 
+The book we will be following is <a href="http://www.alnasiry.net/Kpdf/Calculus%20-JON%20ROGAWSKI.pdf"><em>Single Variable Calculus (2nd edition)</em></a> by Jonathan D. Rogawski. We will be covering material in Chapters 7, 8, 9, and 11. You may find all the information you will need on the <a href="https://pabloocal.github.io/web-documents/Teaching/WMATH31BL22024/WMATH31BL22024_Syllabus.pdf"><b>Syllabus</b></a>.
+  </p>
+
+  </div>
+  
+ </div>
+
+  <div class="text">
+
+  <div class="pagetitle" id="Class_Notes">
+ Class Notes
+  </div>
+  
+  <div class="textblock">
+  <p> 
+The following notes are a formal outline of the material we will be covering. These notes are not comprehensive nor are intended to be a substitute for the textbook or the lectures. If you find mistakes (typographical or other) in these notes, or have comments, please let me know.
+  </p>
+<ul style="list-style-type:none">
+  <li><a href="https://pabloocal.github.io/web-documents/Teaching/WMATH31BL22024/MATH31B_Class_Notes_Winter2024.pdf">MATH 31B Class Notes</a>.</li>
+</ul>
+
+  <p> 
+The following are additional materials closely related to the class notes.
+  </p>
+<ul>
+  <li><a href="https://www.math.utah.edu/~wortman/1050-text-fp.pdf">Factoring polynomials</a> by <a href="https://www.math.utah.edu/~wortman/"><b>Kevin Wortman</b></a>.</li>
+  <li><a href="https://www.youtube.com/watch?v=C0qBB7YWscM">A guide to partial fractions</a> by <a href="https://www.math.ucla.edu/~josephbreen/"><b>Joseph Breen</b></a>.</li>
+  <li><a href="https://drive.google.com/file/d/1h4yV-zFbazFPl0ytlAltyrYLJ0oI__Bo/view">Angles, sine, and cosine, in the unit circle</a> by <a href="https://sites.google.com/site/cazelais/"><b>Gilles Cazelais</b></a>.</li>
+  <li><a href="https://drive.google.com/file/d/1MRXkt3QOTZmblfrfL5MTPZ1oiEfWjwll/view">Trigonometry in the unit circle</a> by <a href="https://sites.google.com/site/cazelais/"><b>Gilles Cazelais</b></a>.</li>
+  <li><a href="https://drive.google.com/file/d/1Wk3bUq02AjLBvsRkUZnDcRCB7XO48DtB/view">Proof of the trigonometric identities for sum and difference angles</a> by <a href="https://sites.google.com/site/cazelais/"><b>Gilles Cazelais</b></a>.</li>
+  <li><a href="https://saylordotorg.github.io/text_intermediate-algebra/s12-04-binomial-theorem.html">Binomial Theorem</a> by <a href="https://www.saylor.org/"><b>Saylor Academy</b></a>.</li>
+</ul>
+
+  </div>
+
+ </div>
+
+  <div class="text">
+
+  <div class="pagetitle" id="Schedule">
+ Tentative Schedule
+  </div>
+
+  <div class="textblock">
+
+<table class="tbl">
+
+  <tr><td class="time"><b>Jan 8</b></td><td>Section 7.1,<br />
+  <span class="prtitle">Derivative of the Exponential Function.</span></td></tr>
+
+  <tr><td class="time"><b>Jan 10</b></td><td>Section 7.2,<br />
+  <span class="prtitle">Inverse Functions.</span></td></tr>
+
+  <tr><td class="time"><b>Jan 12</b></td><td>Section 7.3,<br />
+  <span class="prtitle">Logarithms and their Derivatives.</span></td></tr>
+
+  <tr><td class="time"><b>Jan 17</b></td><td>Section 7.7,<br />
+  <span class="prtitle">L'Hopital's Rule.</span></td></tr>
+
+  <tr><td class="time"><b>Jan 19</b></td><td>Section 7.8, 7.9,<br />
+  <span class="prtitle">Inverse Trigonometric and Hyperbolic Functions.</span></td></tr>
+
+  <tr><td class="time"><b>Jan 22</b></td><td>Section 8.1,<br />
+  <span class="prtitle">Integration by Parts.</span></td></tr>
+
+  <tr><td class="time"><b>Jan 24</b></td><td>Section 8.1, 8.5,<br />
+  <span class="prtitle">Integration by Parts (continued), The Method of Partial Fractions.</span></td></tr>
+
+  <tr><td class="time"><b>Jan 26</b></td><td>Section 8.5,<br />
+  <span class="prtitle">The Method of Partial Fractions (continued).</span></td></tr>
+
+  <tr><td class="time"><b>Jan 29</b></td><td>Sections 7.1-7.3, 7.7-7.9, 8.1, 8.5,<br />
+  <span class="prtitle">Review.</span></td></tr>
+
+  <tr><td class="time"><b>Jan 31</b></td><td>Sections 7.1-7.3, 7.7-7.9, 8.1, 8.5,<br />
+  <span class="prtitle">Midterm 1.</span></td></tr>
+
+  <tr><td class="time"><b>Feb 2</b></td><td>Section 9.4,<br />
+  <span class="prtitle">Taylor Polynomials.</span></td></tr>
+
+  <tr><td class="time"><b>Feb 5</b></td><td>Section 8.6,<br />
+  <span class="prtitle">Improper Integrals.</span></td></tr>
+
+  <tr><td class="time"><b>Feb 7</b></td><td>Section 8.6,<br />
+  <span class="prtitle">Improper Integrals (continued).</span></td></tr>
+
+  <tr><td class="time"><b>Feb 9</b></td><td>Section 11.1,<br />
+  <span class="prtitle">Sequences.</span></td></tr>
+
+  <tr><td class="time"><b>Feb 12</b></td><td>Section 11.1,<br />
+  <span class="prtitle">Sequences (continued).</span></td></tr>
+
+  <tr><td class="time"><b>Feb 14</b></td><td>Section 11.2,<br />
+  <span class="prtitle">Summing an Infinite Series.</span></td></tr>
+
+  <tr><td class="time"><b>Feb 16</b></td><td>Section 11.2,<br />
+  <span class="prtitle">Summing an Infinite Series (continued).</span></td></tr>
+
+  <tr><td class="time"><b>Feb 21</b></td><td>Sections 8.6, 9.1, 9.4, 11.1, 11.2,<br />
+  <span class="prtitle">Review.</span></td></tr>
+
+  <tr><td class="time"><b>Feb 23</b></td><td>Sections 8.6, 9.1, 9.4, 11.1, 11.2,<br />
+  <span class="prtitle">Midterm 2.</span></td></tr>
+
+  <tr><td class="time"><b>Feb 26</b></td><td>Section 11.3,<br />
+  <span class="prtitle">Convergence of Series with Positive Terms.</span></td></tr>
+
+  <tr><td class="time"><b>Feb 28</b></td><td>Section 11.3,<br />
+  <span class="prtitle">Convergence of Series with Positive Terms (continued).</span></td></tr>
+
+  <tr><td class="time"><b>Mar 1</b></td><td>Section 11.4,<br />
+  <span class="prtitle">Absolute and Conditional Convergence.</span></td></tr>
+
+  <tr><td class="time"><b>Mar 4</b></td><td>Section 11.5,<br />
+  <span class="prtitle">The Ratio and Root Tests.</span></td></tr>
+
+  <tr><td class="time"><b>Mar 6</b></td><td>Section 11.6,<br />
+  <span class="prtitle">Power Series.</span></td></tr>
+
+  <tr><td class="time"><b>Mar 8</b></td><td>Section 11.6,<br />
+  <span class="prtitle">Power Series (continued).</span></td></tr>
+
+  <tr><td class="time"><b>Mar 11</b></td><td>Section 11.7,<br />
+  <span class="prtitle">Taylor Series.</span></td></tr>
+
+  <tr><td class="time"><b>Mar 13</b></td><td>Section 11.7,<br />
+  <span class="prtitle">Taylor Series (continued).</span></td></tr>
+
+  <tr><td class="time"><b>Mar 15</b></td><td>Sections 7.1-7.3, 7.7-7.9, 8.1, 8.6, 9.1, 9.4, 11.1-11.7,<br />
+  <span class="prtitle">Review.</span></td></tr>
+
+  <tr><td class="time"><b>Mar 22</b></td><td>Sections 7.1-7.3, 7.7-7.9, 8.1, 8.6, 9.1, 9.4, 11.1-11.7,<br />
+  <span class="prtitle">Final Exam.</span></td></tr>
+
+</table>
+
+ </div>
+
+ </div>
+
+  <div class="text">
+
+  <div class="pagetitle" id="Homework">
+ Homework
+  </div>
+  
+  <div class="textblock">
+  <p> 
+There will be typically weekly homework. The assignments will be posted before Mondays at 9:00 am. The assignments will be due on <a href="https://www.gradescope.com/courses/478763">Gradescope</a> the following week, on Friday at 11:59 pm. The assignments and deadlines will be posted here. You are encouraged to work in groups.
+  </p>
+
+<table class="tbl">
+
+  <tr><td class="time"><b>Jan 9</b></td><td><a href="https://pabloocal.github.io/web-documents/Teaching/WMATH31BL22024/Homework/Homework_0.pdf">Homework 0</a>.<br />
+  <span class="prtitle">Deadline: Jan 20.</span></td></tr>
+
+  <tr><td class="time"><b>Jan 9</b></td><td><a href="https://pabloocal.github.io/web-documents/Teaching/WMATH31BL22024/Homework/Homework_1.pdf">Homework 1</a>.<br />
+  <span class="prtitle">Deadline: Jan 20.</span></td></tr>
+
+  <tr><td class="time"><b>Jan 16</b></td><td><a href="https://pabloocal.github.io/web-documents/Teaching/WMATH31BL22024/Homework/Homework_2.pdf">Homework 2</a>.<br />
+  <span class="prtitle">Deadline: Jan 27.</span></td></tr>
+
+  <tr><td class="time"><b>Jan 23</b></td><td><a href="https://pabloocal.github.io/web-documents/Teaching/WMATH31BL22024/Homework/Homework_3.pdf">Homework 3</a>.<br />
+  <span class="prtitle">Deadline: Feb 3.</span></td></tr>
+
+  <tr><td class="time"><b>Jan 30</b></td><td><a href="https://pabloocal.github.io/web-documents/Teaching/WMATH31BL22024/Homework/Homework_4.pdf">Homework 4</a>.<br />
+  <span class="prtitle">Deadline: Feb 10.</span></td></tr>
+
+  <tr><td class="time"><b>Feb 6</b></td><td><a href="https://pabloocal.github.io/web-documents/Teaching/WMATH31BL22024/Homework/Homework_5.pdf">Homework 5</a>.<br />
+  <span class="prtitle">Deadline: Feb 17.</span></td></tr>
+
+  <tr><td class="time"><b>Feb 13</b></td><td><a href="https://pabloocal.github.io/web-documents/Teaching/WMATH31BL22024/Homework/Homework_6.pdf">Homework 6</a>.<br />
+  <span class="prtitle">Deadline: Feb 24.</span></td></tr>
+
+  <tr><td class="time"><b>Feb 20</b></td><td><a href="https://pabloocal.github.io/web-documents/Teaching/WMATH31BL22024/Homework/Homework_7.pdf">Homework 7</a>.<br />
+  <span class="prtitle">Deadline: Mar 3.</span></td></tr>
+
+  <tr><td class="time"><b>Feb 27</b></td><td><a href="https://pabloocal.github.io/web-documents/Teaching/WMATH31BL22024/Homework/Homework_8.pdf">Homework 8</a>.<br />
+  <span class="prtitle">Deadline: Mar 10.</span></td></tr>
+
+  <tr><td class="time"><b>Mar 6</b></td><td><a href="https://pabloocal.github.io/web-documents/Teaching/WMATH31BL22024/Homework/Homework_9.pdf">Homework 9</a>.<br />
+  <span class="prtitle">Deadline: Mar 19.</span></td></tr>
+
+  <tr><td class="time"><b>Mar 13</b></td><td><a href="https://pabloocal.github.io/web-documents/Teaching/WMATH31BL22024/Homework/Homework_10.pdf">Homework 10</a>.<br />
+  <span class="prtitle">Deadline: Mar 19.</span></td></tr>
+
+</table>
+
+  </div>
+  
+ </div>
+
+  <div class="text">
+
+  <div class="pagetitle" id="Discussion">
+ Discussion
+  </div>
+  
+  <div class="textblock">
+  <p> 
+There will be typically weekly discussion sessions. These intend to allocate time for you to work on the homework problems with your peers while having readily available feedback. The starred problem will be due on <a href="https://www.gradescope.com/courses/478763">Gradescope</a> on Thursday at 11:59 pm. The deadlines will be posted here. You are encouraged to work in groups.
+  </p>
+
+<table class="tbl">
+
+  <tr><td class="time"><b>Jan 9</b></td><td>Discussion 1.<br />
+  <span class="prtitle">Deadline: Jan 12.</span></td></tr>
+
+  <tr><td class="time"><b>Jan 16</b></td><td>Discussion 2.<br />
+  <span class="prtitle">Deadline: Jan 19.</span></td></tr>
+
+  <tr><td class="time"><b>Jan 23</b></td><td>Discussion 3.<br />
+  <span class="prtitle">Deadline: Jan 26.</span></td></tr>
+
+  <tr><td class="time"><b>Jan 30</b></td><td>Discussion 4.<br />
+  <span class="prtitle">Deadline: Feb 2.</span></td></tr>
+
+  <tr><td class="time"><b>Feb 6</b></td><td>Discussion 5.<br />
+  <span class="prtitle">Deadline: Feb 9.</span></td></tr>
+
+  <tr><td class="time"><b>Feb 13</b></td><td>Discussion 6.<br />
+  <span class="prtitle">Deadline: Feb 16.</span></td></tr>
+
+  <tr><td class="time"><b>Feb 20</b></td><td>Discussion 7.<br />
+  <span class="prtitle">Deadline: Feb 23.</span></td></tr>
+
+  <tr><td class="time"><b>Feb 27</b></td><td>Discussion 8.<br />
+  <span class="prtitle">Deadline: Mar 2.</span></td></tr>
+
+  <tr><td class="time"><b>Mar 6</b></td><td>Discussion 9.<br />
+  <span class="prtitle">Deadline: Mar 9.</span></td></tr>
+
+  <tr><td class="time"><b>Mar 13</b></td><td>Discussion 10.<br />
+  <span class="prtitle">Deadline: Mar 16.</span></td></tr>
+
+</table>
+
+  </div>
+  
+ </div>
+
+  <div class="text">
+
+  <div class="pagetitle" id="Exams">
+ Exams
+  </div>
+  
+  <div class="textblock">
+  <p> 
+Here the exams and their solutions will be posted. You can find the official UCLA schedule for the final exams <a href="https://registrar.ucla.edu/registration-classes/examinations/final-examination-schedules"><b>here</b></a>.
+  </p>
+
+<table class="tbl">
+
+  <tr><td class="time"><b>Jan 31</b></td><td>Midterm 1,<br />
+  <span class="prtitle">MS 4000A from 10:00 to 11:50 am.</span></td></tr>
+
+  <tr><td class="time"><b>Feb 23</b></td><td>Midterm 2,<br />
+  <span class="prtitle">MS 4000A from 10:00 to 11:50 am.</span></td></tr>
+
+  <tr><td class="time"><b>Mar 22</b></td><td>Final Exam,<br />
+  <span class="prtitle">TBD from 11:30 am to 2:30 pm.</span></td></tr>
+
+</table>
+
+  <p> 
+The following are practice exams that you may use to prepare:
+  </p>
+<ul>
+  <li><a href="https://pabloocal.github.io/web-documents/Teaching/WMATH31BL22024/Exams/Practice_Midterm_1.pdf">Practice Exam 1</a>, <a href="https://pabloocal.github.io/web-documents/Teaching/WMATH31BL22024/Exams/Practice_Midterm_1_Solutions.pdf">Solutions</a>.</li>
+  <li><a href="https://pabloocal.github.io/web-documents/Teaching/WMATH31BL22024/Exams/Practice_Midterm_2.pdf">Practice Exam 2</a>, <a href="https://pabloocal.github.io/web-documents/Teaching/WMATH31BL22024/Exams/Practice_Midterm_2_Solutions.pdf">Solutions</a>.</li>
+  <li><a href="https://pabloocal.github.io/web-documents/Teaching/WMATH31BL22024/Exams/Practice_Midterm_3.pdf">Practice Exam 3</a>, <a href="https://pabloocal.github.io/web-documents/Teaching/WMATH31BL22024/Exams/Practice_Midterm_3_Solutions.pdf">Solutions</a>.</li>
+</ul>
+
+  </div>
+  
+ </div>
+
+  <div class="text">
+
+  <div class="pagetitle" id="Resources">
+Resources
+  </div>
+  
+  <div class="textblock">
+  <p> 
+There are many resources available for a student at UCLA, I encourage you to use them and make the most out of them. Here are some materials specific to this course:
+  </p>
+<ul>
+  <li>The open office hours at the Student Math Center can be found <a href="https://ww3.math.ucla.edu/student-math-center/"><b>here</b></a>.</li>
+  <li>The open tutoring of Tau Beta Pi can be found <a href="https://tbp.seas.ucla.edu/tutoring/"><b>here</b></a>.</li>
+  <li>The Math Success Program from the <a href="https://cpo.ucla.edu/"><b>Community Programs Office</b></a> can be found <a href="https://communitypartnerships.ucla.edu/program-search/math-success-program-msp"><b>here</b></a>.</li>
+  <li>The online calculator Wolfram|Alpha can be found <a href="https://www.wolframalpha.com/"><b>here</b></a>.</li>
+</ul>
+  <p> 
+I also encourage you to form study groups with your classmates. However, please keep in mind that you will only learn how to do the exercises if you try them on your own: without trying, looking up the solutions or copying others' work is absolutely useless.
+  </p>
+  </div>
+  
+ </div>
+
+  <div class="text">
+
+  <div class="pagetitle" id="Grading_Schemes">
+Grading Schemes
+  </div>
+  
+  <div class="textblock">
+  <p> 
+You can compute your final grade using the calculator below. Please input the average of your homework assignments (out of 100), the average of your discussion assignments (out of 100), the score of your first midterm (out of 100), the score of your second midterm (out of 100), and the score of your final (out of 100). Then, click "Compute grading schemes" to see the three grading schemes (out of 100).
+  </p>
+<ul style="list-style-type:none">
+  <li><label>Homework average:</label> <input type="text" id="homework" size="2"></li>
+  <li><label>Discussion average:</label> <input type="text" id="discussion" size="2"></li>
+  <li><label>Midterm 1:</label> <input type="text" id="midterm1" size="2"></li>
+  <li><label>Midterm 2:</label> <input type="text" id="midterm2" size="2"></li>
+  <li><label>Final:</label> <input type="text" id="final" size="2"></li>
+</ul>
+<ul style="list-style-type:none">
+  <li><button onClick="schemes()">Compute grading schemes</button></li>
+</ul>
+<p id="result">
+</p>
+  </div>
+  
+ </div>
+
+</div>
+</div>
+
+<!--
+<div class="footer">            
+</div>
+-->
+
+</body>
+
+</html>

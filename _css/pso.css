@@ -17,21 +17,21 @@ body {
 }
 .container {
   min-width:650px;
-  color:#080808;
+  color:#f7f7f7;
   padding:0px 30px 30px 30px;
   font-family:helvetica,arial;
 }
 
 a {
   text-decoration:none;
-  color:#404040;
-  border-bottom:1px solid #aaaaaa;
+  color:#bfbfbf;
+  border-bottom:1px solid #555555;
   font-family:helvetica,arial;
 }
 a:hover {
   text-decoration:none;
-  color:#202020;
-  border-bottom:1px solid #303030;
+  color:#dfdfdf;
+  border-bottom:1px solid #cfcfcf;
 }
 
 p {
@@ -74,14 +74,14 @@ sub {
 
 a.textlink {
   text-decoration:none;
-  color:#101010;
-  border-bottom:1px solid #aaaaaa;
+  color:#efefef;
+  border-bottom:1px solid #555555;
   font-family:helvetica,arial;
 }
 a.textlink:hover {
   text-decoration:none;
-  color:#202020;
-  border-bottom:1px solid #303030;
+  color:#dfdfdf;
+  border-bottom:1px solid #cfcfcf;
 }
 
 a.imagelink {
@@ -95,15 +95,15 @@ a.imagelink:hover {
 
 a.menulink {
   text-decoration:none;
-  color:#606060;
-  border-bottom:0px solid #aaaaaa;
+  color:#9f9f9f;
+  border-bottom:0px solid #555555;
   font-size:15px;
   font-family:helvetica,arial;
 }
 a.menulink:hover {
   text-decoration:none;
-  color:#202020;
-  border-bottom:1px solid #303030;
+  color:#dfdfdf;
+  border-bottom:1px solid #cfcfcf;
 }
 
 .text {
@@ -129,7 +129,7 @@ a.menulink:hover {
 }
 
 .registration {
-  color:#404040;
+  color:#bfbfbf;
   font-family:helvetica,arial;
 }
 
@@ -166,7 +166,7 @@ a.menulink:hover {
   position:absolute;
   top:140px;
   left:100px;
-  border: 0px solid #bbbbbb;
+  border: 0px solid #444444;
   width:660px;
 }
 .prtitle {
@@ -182,7 +182,7 @@ td {
   padding-bottom:1px;
   margin-bottom: 8px;
   margin-top:10px;
-  border-bottom: 2px solid #cccccc;
+  border-bottom: 2px solid #333333;
   letter-spacing:0px;
   font-family:helvetica,arial;
 }
@@ -202,41 +202,41 @@ td {
 }
 a.problems {
   text-decoration:none;
-  color:#909090;
-  border-bottom:0px solid #aaaaaa;
+  color:#6f6f6f;
+  border-bottom:0px solid #555555;
   font-family:helvetica,arial;
 }
 a.problems:hover {
   text-decoration:none;
-  color:#202020;
-  border-bottom:1px solid #303030;
+  color:#dfdfdf;
+  border-bottom:1px solid #cfcfcf;
 }
 
 /*** Works on common browsers ***/
 ::selection {
-  background-color: #000000;
-  color: #ffffff;
+  background-color: #ffffff;
+  color: #000000;
 }
 
 /*** Mozilla based browsers ***/
 ::-moz-selection {
-  background-color: #000000;
-  color: #ffffff;
+  background-color: #ffffff;
+  color: #000000;
 }
 
 /***For Other Browsers ***/
 ::-o-selection {
-  background-color: #000000;
-  color: #ffffff;
+  background-color: #ffffff;
+  color: #000000;
 }
 
 ::-ms-selection {
-  background-color: #000000;
-  color: #ffffff;
+  background-color: #ffffff;
+  color: #000000;
 }
 
 /*** For Webkit ***/
 ::-webkit-selection {
-  background-color: #000000;
-  color: #ffffff;
+  background-color: #ffffff;
+  color: #000000;
 }

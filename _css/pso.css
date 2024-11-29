@@ -43,6 +43,13 @@ body {
   border-bottom: 1px solid #333333;
 }
 
+.curriculum-vitae {
+  margin-bottom: 5px;
+  font-size: 16px;
+  text-align: center;
+  color: #9f9f9f;
+}
+
 a {
   text-decoration: none;
   color: #bfbfbf;

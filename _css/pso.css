@@ -43,6 +43,14 @@ body {
   border-bottom: 1px solid #333333;
 }
 
+.overtitle {
+  margin-bottom: 15px;
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-align: center;
+  color: #8f8f8f;
+}
+
 .maintitle {
   margin-bottom: 15px;
   font-size: 40px;

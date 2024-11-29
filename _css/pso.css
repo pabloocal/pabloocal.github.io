@@ -74,102 +74,102 @@ sub {
 }
 
 .pagetitle {
-  margin-bottom:40px;
-  font-size:24px;
-  text-align:center;
+  margin-bottom: 40px;
+  font-size: 24px;
+  text-align: center;
   font-family: roboto, helvetica, arial;
 }
 
 a.textlink {
-  text-decoration:none;
-  color:#efefef;
-  border-bottom:1px solid #555555;
+  text-decoration: none;
+  color: #efefef;
+  border-bottom: 1px solid #555555;
   font-family: roboto, helvetica, arial;
 }
 
 a.textlink:hover {
-  text-decoration:none;
-  color:#dfdfdf;
-  border-bottom:1px solid #cfcfcf;
+  text-decoration: none;
+  color: #dfdfdf;
+  border-bottom: 1px solid #cfcfcf;
 }
 
 a.imagelink {
-  text-decoration:none;
-  border:0px;
+  text-decoration: none;
+  border: 0px;
 }
 
 a.imagelink:hover {
-  text-decoration:none;
-  border:0px;
+  text-decoration: none;
+  border: 0px;
 }
 
 a.menulink {
-  text-decoration:none;
-  color:#9f9f9f;
-  border-bottom:0px solid #555555;
-  font-size:15px;
+  text-decoration: none;
+  color: #9f9f9f;
+  border-bottom: 0px solid #555555;
+  font-size: 15px;
   font-family: roboto, helvetica, arial;
 }
 
 a.menulink:hover {
-  text-decoration:none;
-  color:#dfdfdf;
-  border-bottom:1px solid #cfcfcf;
+  text-decoration: none;
+  color: #dfdfdf;
+  border-bottom: 1px solid #cfcfcf;
 }
 
 .text {
-  margin-top:80px;
-  line-height:125%;
+  margin-top: 80px;
+  line-height: 125%;
 }
 
 .textblock {
-  padding-left:7px;
-  width:640px;
-  margin:0 auto;
-  text-align:justify;
+  padding-left: 7px;
+  width: 640px;
+  margin: 0 auto;
+  text-align: justify;
 }
 
 .textblockcentre {
-  padding-left:2px;
-  width:620px;
-  text-align:center;
+  padding-left: 2px;
+  width: 620px;
+  text-align: center;
 }
 
 .textblocklist {
-  padding-left:7px;
-  width:640px;
-  margin:0 auto;
-  line-height:150%;
+  padding-left: 7px;
+  width: 640px;
+  margin: 0 auto;
+  line-height: 150%;
 }
 
 .registration {
-  color:#bfbfbf;
+  color: #bfbfbf;
   font-family: roboto, helvetica, arial;
 }
 
 .talktitle {
-  font-style:italic;
+  font-style: italic;
 }
 
 .seriestitle {
-  font-style:italic;
-  padding-top:10px;
+  font-style: italic;
+  padding-top: 10px;
 }
 
 .seriesabstract {
-  padding-top:3px;
-  padding-bottom:0px;
-  line-height:20px;
+  padding-top: 3px;
+  padding-bottom: 0px;
+  line-height: 20px;
 }
 
 .seriesabstractlast {
-  padding-top:3px;
-  padding-bottom:30px;
-  line-height:20px;
+  padding-top: 3px;
+  padding-bottom: 30px;
+  line-height: 20px;
 }
 
 .speakeraffil {
-  padding-bottom:2px;
+  padding-bottom: 2px;
 }
 
 .speaker {
@@ -177,21 +177,21 @@ a.menulink:hover {
 }
 
 .abstract {
-  padding-top:12px;
-  padding-bottom:30px;
-  line-height:20px;
+  padding-top: 12px;
+  padding-bottom: 30px;
+  line-height: 20px;
 }
 
 .prtextblock {
-  position:absolute;
-  top:140px;
-  left:100px;
+  position: absolute;
+  top: 140px;
+  left: 100px;
   border: 0px solid #444444;
-  width:660px;
+  width: 660px;
 }
 
 .prtitle {
-  font-style:italic;
+  font-style: italic;
 }
 
 .prspeaker {
@@ -203,41 +203,41 @@ td {
 }
 
 .date {
-  padding-bottom:1px;
+  padding-bottom: 1px;
   margin-bottom: 8px;
-  margin-top:10px;
+  margin-top: 10px;
   border-bottom: 2px solid #333333;
-  letter-spacing:0px;
+  letter-spacing: 0px;
   font-family: roboto, helvetica, arial;
 }
 
 .tbl {
   border-spacing: 0px 9px;
-  line-height:145%;
-  margin-left:0px;
+  line-height: 145%;
+  margin-left: 0px;
   text-align: left;
-  margin-bottom:20px;
+  margin-bottom: 20px;
 }
 
 .time {
-  width:110px;
+  width: 110px;
 }
 
 .problems {
-  float:right;
+  float: right;
 }
 
 a.problems {
-  text-decoration:none;
-  color:#6f6f6f;
-  border-bottom:0px solid #555555;
+  text-decoration: none;
+  color: #6f6f6f;
+  border-bottom: 0px solid #555555;
   font-family: roboto, helvetica, arial;
 }
 
 a.problems:hover {
-  text-decoration:none;
-  color:#dfdfdf;
-  border-bottom:1px solid #cfcfcf;
+  text-decoration: none;
+  color: #dfdfdf;
+  border-bottom: 1px solid #cfcfcf;
 }
 
 /*** Works on common browsers ***/

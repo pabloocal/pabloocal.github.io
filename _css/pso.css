@@ -287,24 +287,24 @@ a.problems:hover {
 
 /*** Mozilla based browsers ***/
 ::-moz-selection {
-  background-color: #ffffff;
+  background-color: #1e1e1e;
   color: #000000;
 }
 
 /***For Other Browsers ***/
 ::-o-selection {
-  background-color: #ffffff;
+  background-color: #1e1e1e;
   color: #000000;
 }
 
 ::-ms-selection {
-  background-color: #ffffff;
+  background-color: #1e1e1e;
   color: #000000;
 }
 
 /*** For Webkit ***/
 ::-webkit-selection {
-  background-color: #ffffff;
+  background-color: #1e1e1e;
   color: #000000;
 }
 

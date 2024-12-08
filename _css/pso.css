@@ -22,7 +22,7 @@ body {
   min-width: 650px;
   color: #f7f7f7;
   padding: 0px 30px 30px 30px;
-  font-family: mono, roboto, helvetica, arial;
+  font-family: roboto, helvetica, arial;
 }
 
 .header {
@@ -68,7 +68,7 @@ a {
   text-decoration: none;
   color: #bfbfbf;
   border-bottom: 1px solid #555555;
-  font-family: mono, roboto, helvetica, arial;
+  font-family: roboto, helvetica, arial;
 }
 
 a:hover {
@@ -116,14 +116,14 @@ sub {
   margin-bottom: 40px;
   font-size: 24px;
   text-align: center;
-  font-family: mono, roboto, helvetica, arial;
+  font-family: roboto, helvetica, arial;
 }
 
 a.textlink {
   text-decoration: none;
   color: #efefef;
   border-bottom: 1px solid #555555;
-  font-family: mono, roboto, helvetica, arial;
+  font-family: roboto, helvetica, arial;
 }
 
 a.textlink:hover {
@@ -147,7 +147,7 @@ a.menulink {
   color: #9f9f9f;
   border-bottom: 0px solid #555555;
   font-size: 15px;
-  font-family: mono, roboto, helvetica, arial;
+  font-family: roboto, helvetica, arial;
 }
 
 a.menulink:hover {
@@ -183,7 +183,7 @@ a.menulink:hover {
 
 .registration {
   color: #bfbfbf;
-  font-family: mono, roboto, helvetica, arial;
+  font-family: roboto, helvetica, arial;
 }
 
 .talktitle {
@@ -212,7 +212,7 @@ a.menulink:hover {
 }
 
 .speaker {
-  font-family: mono, roboto, helvetica, arial;
+  font-family: roboto, helvetica, arial;
 }
 
 .abstract {
@@ -234,7 +234,7 @@ a.menulink:hover {
 }
 
 .prspeaker {
-  font-family: mono, roboto, helvetica, arial;
+  font-family: roboto, helvetica, arial;
 }
 
 td {
@@ -247,7 +247,7 @@ td {
   margin-top: 10px;
   border-bottom: 2px solid #333333;
   letter-spacing: 0px;
-  font-family: mono, roboto, helvetica, arial;
+  font-family: roboto, helvetica, arial;
 }
 
 .tbl {
@@ -270,7 +270,7 @@ a.problems {
   text-decoration: none;
   color: #6f6f6f;
   border-bottom: 0px solid #555555;
-  font-family: mono, roboto, helvetica, arial;
+  font-family: roboto, helvetica, arial;
 }
 
 a.problems:hover {

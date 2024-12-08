@@ -22,7 +22,7 @@ body {
   min-width: 650px;
   color: #f7f7f7;
   padding: 0px 30px 30px 30px;
-  font-family: iosevka, roboto, helvetica, arial;
+  font-family: mono, roboto, helvetica, arial;
 }
 
 .header {
@@ -308,3 +308,9 @@ a.problems:hover {
   color: #000000;
 }
 
+/*
+@font-face {
+font-family: "DVS";
+src: url("../_css/DejaVuSansMono.ttf");
+}
+*/

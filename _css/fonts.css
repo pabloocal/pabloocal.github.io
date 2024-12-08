@@ -74,3 +74,34 @@ https://fonts.google.com/specimen/Roboto
   font-style: italic;
 }
 
+/*
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 700
+*/
+
+.roboto-mono-regular {
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.raleway-regular {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/**/
+
+@font-face {
+font-family: "DVS";
+src: url("https://pabloocal.github.io/_css/DejaVuSans.ttf");
+}
+
+@font-face {
+font-family: "DVS";
+src: url("../_css/DejaVuSansMono.ttf");
+}

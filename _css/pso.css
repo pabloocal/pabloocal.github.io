@@ -7,7 +7,8 @@ body {
   margin: 0 0 0px;
   padding: 0px;
   border: 0px;
-  font-size: 15px;
+  font-size: 12px;
+  font-family: mono, roboto, helvetica, arial;
   background-color: #1e1e1e;
 }
 
@@ -22,7 +23,6 @@ body {
   min-width: 650px;
   color: #f7f7f7;
   padding: 0px 30px 30px 30px;
-  font-family: roboto, helvetica, arial;
 }
 
 .header {
@@ -33,7 +33,7 @@ body {
   min-width: 710px;
   border-bottom: 0px solid #333333;
   text-align: center;
-  font-size: 16px;
+  font-size: 13px;
 }
 
 .horizontal-line {
@@ -45,7 +45,7 @@ body {
 
 .overtitle {
   margin-bottom: 15px;
-  font-size: 14px;
+  font-size: 11px;
   letter-spacing: 1px;
   text-align: center;
   color: #8f8f8f;
@@ -53,13 +53,13 @@ body {
 
 .maintitle {
   margin-bottom: 15px;
-  font-size: 40px;
+  font-size: 32px;
   text-align: center;
 }
 
 .subtitle {
   margin-bottom: 5px;
-  font-size: 16px;
+  font-size: 13px;
   text-align: center;
   color: #9f9f9f;
 }
@@ -68,7 +68,6 @@ a {
   text-decoration: none;
   color: #bfbfbf;
   border-bottom: 1px solid #555555;
-  font-family: roboto, helvetica, arial;
 }
 
 a:hover {
@@ -78,6 +77,10 @@ a:hover {
 }
 
 p {
+  line-height: 135%;
+}
+
+ol {
   line-height: 135%;
 }
 
@@ -114,16 +117,14 @@ sub {
 
 .pagetitle {
   margin-bottom: 40px;
-  font-size: 24px;
+  font-size: 19px;
   text-align: center;
-  font-family: roboto, helvetica, arial;
 }
 
 a.textlink {
   text-decoration: none;
   color: #efefef;
   border-bottom: 1px solid #555555;
-  font-family: roboto, helvetica, arial;
 }
 
 a.textlink:hover {
@@ -146,8 +147,6 @@ a.menulink {
   text-decoration: none;
   color: #9f9f9f;
   border-bottom: 0px solid #555555;
-  font-size: 15px;
-  font-family: roboto, helvetica, arial;
 }
 
 a.menulink:hover {
@@ -183,7 +182,6 @@ a.menulink:hover {
 
 .registration {
   color: #bfbfbf;
-  font-family: roboto, helvetica, arial;
 }
 
 .talktitle {
@@ -212,7 +210,6 @@ a.menulink:hover {
 }
 
 .speaker {
-  font-family: roboto, helvetica, arial;
 }
 
 .abstract {
@@ -234,7 +231,6 @@ a.menulink:hover {
 }
 
 .prspeaker {
-  font-family: roboto, helvetica, arial;
 }
 
 td {
@@ -247,7 +243,6 @@ td {
   margin-top: 10px;
   border-bottom: 2px solid #333333;
   letter-spacing: 0px;
-  font-family: roboto, helvetica, arial;
 }
 
 .tbl {
@@ -270,7 +265,6 @@ a.problems {
   text-decoration: none;
   color: #6f6f6f;
   border-bottom: 0px solid #555555;
-  font-family: roboto, helvetica, arial;
 }
 
 a.problems:hover {

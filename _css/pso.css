@@ -8,7 +8,7 @@ body {
   padding: 0px;
   border: 0px;
   font-size: 12px;
-  font-family: "Monospace", monospace;
+  font-family: '0xProto-Bold', 'Monospace', monospace;
   background-color: #1e1e1e;
 }
 
@@ -278,18 +278,28 @@ a.problems:hover {
 }
 
 /*** Works on common browsers ***/
+
 ::selection {
   background-color: #ffffff;
   color: #000000;
 }
 
 /*** Mozilla based browsers ***/
+
 ::-moz-selection {
   background-color: #ffffff;
   color: #000000;
 }
 
-/***For Other Browsers ***/
+/*** Webkit based browsers ***/
+
+::-webkit-selection {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/*** For other browsers ***/
+
 ::-o-selection {
   background-color: #ffffff;
   color: #000000;
@@ -300,9 +310,32 @@ a.problems:hover {
   color: #000000;
 }
 
-/*** For Webkit ***/
-::-webkit-selection {
-  background-color: #ffffff;
-  color: #000000;
+/*** For custom fonts ***/
+
+@font-face {
+    font-family: '0xProto-Bold';
+    src: url('https://pabloocal.github.io/_css/fonts/0xProto-Bold.otf') format('otf'),
+         url('https://pabloocal.github.io/_css/fonts/0xProto-Bold.ttf') format('truetype'),
+         url('https://pabloocal.github.io/_css/fonts/0xProto-Bold.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: '0xProto-Italic';
+    src: url('https://pabloocal.github.io/_css/fonts/0xProto-Italic.otf') format('otf'),
+         url('https://pabloocal.github.io/_css/fonts/0xProto-Italic.ttf') format('truetype'),
+         url('https://pabloocal.github.io/_css/fonts/0xProto-Italic.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: '0xProto-Regular';
+    src: url('https://pabloocal.github.io/_css/fonts/0xProto-Regular.otf') format('otf'),
+         url('https://pabloocal.github.io/_css/fonts/0xProto-Regular.ttf') format('truetype'),
+         url('https://pabloocal.github.io/_css/fonts/0xProto-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
 }
 

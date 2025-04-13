@@ -76,11 +76,19 @@ a:hover {
   border-bottom: 1px solid #cfcfcf;
 }
 
-p {
-  line-height: 135%;
+b {
+  font-family: '0xProto-Bold', 'Monospace', monospace;
+}
+
+i {
+  font-family: '0xProto-Italic', 'Monospace', monospace;
 }
 
 ol {
+  line-height: 135%;
+}
+
+p {
   line-height: 135%;
 }
 
@@ -314,27 +322,27 @@ a.problems:hover {
 
 @font-face {
     font-family: '0xProto-Bold';
-    src: url('https://pabloocal.github.io/_css/fonts/0xProto-Bold.otf') format('otf'),
-         url('https://pabloocal.github.io/_css/fonts/0xProto-Bold.ttf') format('truetype'),
-         url('https://pabloocal.github.io/_css/fonts/0xProto-Bold.woff2') format('woff2');
+    src: url('../_css/fonts/0xProto-Bold.otf') format('otf'),
+         url('../_css/fonts/0xProto-Bold.ttf') format('truetype'),
+         url('../_css/fonts/0xProto-Bold.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: '0xProto-Italic';
-    src: url('https://pabloocal.github.io/_css/fonts/0xProto-Italic.otf') format('otf'),
-         url('https://pabloocal.github.io/_css/fonts/0xProto-Italic.ttf') format('truetype'),
-         url('https://pabloocal.github.io/_css/fonts/0xProto-Italic.woff2') format('woff2');
+    src: url('../_css/fonts/0xProto-Italic.otf') format('otf'),
+         url('../_css/fonts/0xProto-Italic.ttf') format('truetype'),
+         url('../_css/fonts/0xProto-Italic.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: '0xProto-Regular';
-    src: url('https://pabloocal.github.io/_css/fonts/0xProto-Regular.otf') format('otf'),
-         url('https://pabloocal.github.io/_css/fonts/0xProto-Regular.ttf') format('truetype'),
-         url('https://pabloocal.github.io/_css/fonts/0xProto-Regular.woff2') format('woff2');
+    src: url('../_css/fonts/0xProto-Regular.otf') format('otf'),
+         url('../_css/fonts/0xProto-Regular.ttf') format('truetype'),
+         url('../_css/fonts/0xProto-Regular.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 }

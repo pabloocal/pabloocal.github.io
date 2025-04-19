@@ -80,7 +80,13 @@ b {
   font-family: '0xProto-Bold', 'Monospace', monospace;
 }
 
+em {
+  font-style: normal;
+  font-family: '0xProto-Italic', 'Monospace', monospace;
+}
+
 i {
+  font-style: normal;
   font-family: '0xProto-Italic', 'Monospace', monospace;
 }
 
@@ -94,6 +100,10 @@ p {
 
 ul {
   line-height: 135%;
+}
+
+span {
+  font-family: '0xProto-Italic', 'Monospace', monospace;
 }
 
 sup, sub {
@@ -197,11 +207,13 @@ a.menulink:hover {
 }
 
 .talktitle {
-  font-style: italic;
+  font-style: normal;
+  font-family: '0xProto-Italic', 'Monospace', monospace;
 }
 
 .seriestitle {
-  font-style: italic;
+  font-style: normal;
+  font-family: '0xProto-Italic', 'Monospace', monospace;
   padding-top: 10px;
 }
 
@@ -239,7 +251,8 @@ a.menulink:hover {
 }
 
 .prtitle {
-  font-style: italic;
+  font-style: normal;
+  font-family: '0xProto-Italic', 'Monospace', monospace;
 }
 
 .prspeaker {

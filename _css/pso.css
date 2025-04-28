@@ -98,6 +98,20 @@ p {
   line-height: 135%;
 }
 
+table {
+  width: 100%;
+  text-align: left;
+  padding: 8px;
+  border-collapse: collapse;
+  border-left: 8px solid #1e1e1e;
+  line-height: 135%;
+}
+
+th {
+  border-bottom: 1px solid;
+  font-family: '0xProto-Bold', 'Monospace', monospace;
+}
+
 ul {
   line-height: 135%;
 }

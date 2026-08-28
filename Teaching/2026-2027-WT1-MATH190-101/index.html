@@ -18,8 +18,7 @@
       var homework = parseInt(document.getElementById("homework").value);
       var midterm = parseInt(document.getElementById("midterm").value);
       var final = parseInt(document.getElementById("final").value);
-      var grade = Math.round((quiz) + (lab) + (homework) + (midterm) + (final)) / 800.0;
-      var grade = Math.round((quiz)) / 800.0;
+      var grade = Math.round((quiz) + (lab) + (homework) + (midterm) + (final)) / 8.0;
       document.getElementById("result").textContent = "Grade: " +grade;
     }
   </script>
@@ -938,16 +937,16 @@
 
         <div class="textblock">
           <p> 
-            You can compute your final grade using the calculator below. Please input the sum of your quizzes, the sum of your laboratories, the sum of your homework assignments, the total score of your first midterm, and the total score of your final. Then, click "Compute grading schemes" to see your grade (out of 100).
+            You can compute your final grade using the calculator below. Please input the sum of your quizzes (out of 120), the sum of your laboratories (out of 40), the sum of your homework assignments (out of 80), the score of your first midterm (out of 160), and the score of your final (out of 400). Then, click "Compute grading schemes" to see your grade (out of 100).
           </p>
 
           <ul style="list-style-type:none">
             <li>
-              <label>Quizzes total score:</label> <input type="text" id="homework" size="2">
+              <label>Quizzes total score:</label> <input type="text" id="quiz" size="2">
             </li>
 
             <li>
-              <label>Laboratories total score:</label> <input type="text" id="discussion" size="2">
+              <label>Laboratories total score:</label> <input type="text" id="lab" size="2">
             </li>
 
             <li>
@@ -955,7 +954,7 @@
             </li>
 
             <li>
-              <label>Midterm:</label> <input type="text" id="midterm2" size="2">
+              <label>Midterm:</label> <input type="text" id="midterm" size="2">
             </li>
 
             <li>
@@ -975,11 +974,6 @@
       </div>
     </div>
   </div>
-
-<!--
-<div class="footer">
-</div>
--->
 
 </body>
 </html>

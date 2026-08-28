@@ -401,7 +401,7 @@
 
         <div class="textblock">
           <p>
-            There will be ten quizzes. These intend to be short problems to keep you engaged with the weekly material being covered in class. The quizzes and their solutions will be posted here. The quizzes will happen in class, starting at 13:00 and ending at 13:10. You must work on your own, you are not allowed to work in groups.
+            There will be ten quizzes. These intend to be short problems to keep you engaged with the weekly material being covered in class. The problems featured in the quizzes will be based on problems from the coursebook. The quizzes and their solutions will be posted here. The quizzes will happen in class, starting at 13:00 and ending at 13:10. You must work on your own, you are not allowed to work in groups.
           </p>
 
           <table class="tbl">
@@ -535,7 +535,7 @@
 
         <div class="textblock">
           <p>
-            There will be ten laboratories. These intend to allocate time for you to work on problems with your peers while having readily available feedback. The laboratories worksheets and their solutions will be posted here. The worksheets will be collected in class at the end of the class. You are encouraged to work in groups.
+            There will be ten laboratories. These intend to allocate time for you to work on problems with your peers while having readily available feedback. The problems featured in the laboratories will be based on problems from the coursebook. The laboratories worksheets and their solutions will be posted here. The worksheets will be collected in class at the end of the class. You are encouraged to work in groups.
           </p>
 
           <table class="tbl">
@@ -669,7 +669,7 @@
 
         <div class="textblock">
           <p>
-            There will be ten homework assignments. These intend to be representative problems helpful to follow the material being covered in class. The assignments and their due date will be posted here. The assignments will be collected in class at 14:50. You are encouraged to work in groups.
+            There will be ten homework assignments. These intend to be representative problems helpful to follow the material being covered in class. The problems featured in the homework will be based on problems from the coursebook. The assignments and their due date will be posted here. The assignments will be collected in class at 14:50. You are encouraged to work in groups.
           </p>
 
           <table class="tbl">
@@ -813,7 +813,7 @@
 
         <div class="textblock">
           <p>
-            Here the exams and their solutions will be posted. You can find information on the UBC schedule for the final exams <a href="https://students.ubc.ca/enrolment/exams/"><b>here</b></a>.
+            There will be a midterm exam and a final exam. The problems featured in the exams will be based on problems from the coursebook. The exams and their solutions will be posted here. You can find information on the UBC schedule for the final exams <a href="https://students.ubc.ca/enrolment/exams/"><b>here</b></a>.
           </p>
 
           <table class="tbl">
@@ -916,6 +916,49 @@
 
           <p>
             I also encourage you to form study groups with your classmates. However, please keep in mind that you will only learn how to do the exercises if you try them on your own: without trying, looking up the solutions or copying others' work is absolutely useless.
+          </p>
+        </div>
+      </div>
+
+      <div class="text">
+        <div class="pagetitle" id="Grading_Schemes">
+          Grading Schemes
+        </div>
+
+        <div class="textblock">
+          <p> 
+            You can compute your final grade using the calculator below. Please input the sum of your quizzes, the sum of your laboratories, the sum of your homework assignments, the total score of your first midterm, and the total score of your final. Then, click "Compute grading schemes" to see your grade (out of 100).
+          </p>
+
+          <ul style="list-style-type:none">
+            <li>
+              <label>Homework average:</label> <input type="text" id="homework" size="2">
+            </li>
+
+            <li>
+              <label>Discussion average:</label> <input type="text" id="discussion" size="2">
+            </li>
+
+            <li>
+              <label>Midterm 1:</label> <input type="text" id="midterm1" size="2">
+            </li>
+
+            <li>
+              <label>Midterm 2:</label> <input type="text" id="midterm2" size="2">
+            </li>
+
+            <li>
+              <label>Final:</label> <input type="text" id="final" size="2">
+            </li>
+          </ul>
+
+          <ul style="list-style-type:none">
+            <li>
+              <button onClick="schemes()">Compute grading schemes</button>
+            </li>
+          </ul>
+
+          <p id="result">
           </p>
         </div>
       </div>

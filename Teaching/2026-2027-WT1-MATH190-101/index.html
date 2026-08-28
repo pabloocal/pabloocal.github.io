@@ -19,9 +19,10 @@
       var midterm = parseInt(document.getElementById("midterm").value);
       var final = parseInt(document.getElementById("final").value);
       var grade = Math.round((quiz) + (lab) + (homework) + (midterm) + (final)) / 800.0;
+      var grade = Math.round((quiz)) / 800.0;
       document.getElementById("result").textContent = "Grade: " +grade;
     }
-</script>
+  </script>
 </head>
 
 <body>
@@ -133,6 +134,16 @@
 
             <td>
               <a href="#Resources">8. Resources</a><br/>
+              <span class="prtitle"></span>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="time">
+            </td>
+
+            <td>
+              <a href="#Grades">9. Grades</a><br/>
               <span class="prtitle"></span>
             </td>
           </tr>
@@ -921,8 +932,8 @@
       </div>
 
       <div class="text">
-        <div class="pagetitle" id="Grading_Schemes">
-          Grading Schemes
+        <div class="pagetitle" id="Grades">
+          Grades
         </div>
 
         <div class="textblock">
@@ -932,19 +943,19 @@
 
           <ul style="list-style-type:none">
             <li>
-              <label>Homework average:</label> <input type="text" id="homework" size="2">
+              <label>Quizzes total score:</label> <input type="text" id="homework" size="2">
             </li>
 
             <li>
-              <label>Discussion average:</label> <input type="text" id="discussion" size="2">
+              <label>Laboratories total score:</label> <input type="text" id="discussion" size="2">
             </li>
 
             <li>
-              <label>Midterm 1:</label> <input type="text" id="midterm1" size="2">
+              <label>Homework total score:</label> <input type="text" id="homework" size="2">
             </li>
 
             <li>
-              <label>Midterm 2:</label> <input type="text" id="midterm2" size="2">
+              <label>Midterm:</label> <input type="text" id="midterm2" size="2">
             </li>
 
             <li>
@@ -954,7 +965,7 @@
 
           <ul style="list-style-type:none">
             <li>
-              <button onClick="schemes()">Compute grading schemes</button>
+              <button onClick="schemes()">Compute grade</button>
             </li>
           </ul>
 

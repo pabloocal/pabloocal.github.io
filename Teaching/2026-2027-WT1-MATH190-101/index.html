@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <title>
+    Calculus Survey - 2026-2027 Winter Term 1
+  </title>
+
+  <link href="../../_css/pso.css" rel="stylesheet" type="text/css">
+
+  <link rel="icon" href="https://pabloocal.github.io/web-documents/favicon.png">
+
+  <script>
+    function schemes(){
+      var quiz = parseInt(document.getElementById("quiz").value);
+      var lab = parseInt(document.getElementById("lab").value);
+      var homework = parseInt(document.getElementById("homework").value);
+      var midterm = parseInt(document.getElementById("midterm").value);
+      var final = parseInt(document.getElementById("final").value);
+      var grade = Math.round((quiz) + (lab) + (homework) + (midterm) + (final)) / 8.0;
+      document.getElementById("result").textContent = "Grade: " +grade;
+    }
+  </script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="wrapper">
+      <div style="margin-top:65px">
+        <div class="overtitle">
+          THE UNIVERSITY OF BRITISH COLUMBIA - 2026-2027 WINTER TERM 1
+        </div>
+
+        <div class="maintitle">
+          MATH 190:101 - Calculus Survey
+        </div>
+
+        <div class="subtitle">
+          Instructor&nbsp;:&nbsp; <a href="https://pabloocal.github.io/">Pablo S. Ocal</a>
+        </div>
+
+        <div class="subtitle">
+          Office hours&nbsp;:&nbsp; W 14:00-15:30 (TBD)
+        </div>
+      </div>
+
+      <div class="text">
+        <table class="tbl">
+          <tr>
+            <td class="time">
+            </td>
+
+            <td>
+              <b>Table of Contents</b><br/>
+              <span class="prtitle"></span>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="time">
+            </td>
+
+            <td>
+              <a href="#Description">1. Description</a><br/>
+              <span class="prtitle"></span>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="time">
+            </td>
+
+            <td>
+              <a href="#Class_Notes">2. Class Notes</a><br/>
+              <span class="prtitle"></span>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="time">
+            </td>
+
+            <td>
+              <a href="#Schedule">3. Schedule</a><br/>
+              <span class="prtitle"></span>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="time">
+            </td>
+
+            <td>
+              <a href="#Quizzes">4. Quizzes</a><br/>
+              <span class="prtitle"></span>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="time">
+            </td>
+
+            <td>
+              <a href="#Laboratories">5. Laboratories</a><br/>
+              <span class="prtitle"></span>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="time">
+            </td>
+
+            <td>
+              <a href="#Homework">6. Homework</a><br/>
+              <span class="prtitle"></span>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="time">
+            </td>
+
+            <td>
+              <a href="#Exams">7. Exams</a><br/>
+              <span class="prtitle"></span>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="time">
+            </td>
+
+            <td>
+              <a href="#Resources">8. Resources</a><br/>
+              <span class="prtitle"></span>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="time">
+            </td>
+
+            <td>
+              <a href="#Grades">9. Grades</a><br/>
+              <span class="prtitle"></span>
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="text">
+        <div class="pagetitle" id="Description">
+          Description
+        </div>
+
+        <div class="textblock">
+          <p>
+            The course <a href="https://www.math.ubc.ca/undergraduate/courses"><em>Calculus Survey</em></a> will treat, among others, functions, limits, asymptotes, derivatives, related rates, Riemann sums, and integrals. The prerequisites required for this course are covered in <a href="https://curriculum.gov.bc.ca/curriculum/mathematics/12/pre-calculus"><em>Pre-calculus 12</em></a>.
+          </p>
+
+          <p>
+            The course will have weekly classes on
+            <ul style="list-style-type:none">
+              <li>
+                <b>Mondays, Wednesdays, and Fridays in <a href="https://www.maps.ubc.ca/?code=IRC">IRC</a>, room G3, from 14:00 to 14:50.</b>
+              </li>
+            </ul>
+          </p>
+
+          <p>
+            The book we will be following is <a href="http://www.alnasiry.net/Kpdf/Calculus%20-JON%20ROGAWSKI.pdf"><em>Single Variable Calculus (2nd edition)</em></a> by Jonathan D. Rogawski. We will be covering material in Chapters 1, 2, 3, 4, 5, 6, 7, and 8. The books <a href="https://personal.math.ubc.ca/~CLP/CLP1/clp_1_dc_text.pdf"><em>CLP-1 Differential Calculus</em></a> and <a href="https://personal.math.ubc.ca/~CLP/CLP2/clp_2_ic_text.pdf"><em>CLP-2 Integral Calculus</em></a> by Joel Feldman, Andrew Rechnitzer, and Elyse Yeager, are useful references for the material covered in the course. We will be covering material in CLP-1 Sections 0.4, 1.3, 1.4, 1.5, 2.4, 2.6, 2.7, 2.8, 2.9, 2.10, 3.2, and 4.1, and material in CLP-2 Sections 1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, and 1.8. You may find all the information you will need on the <a href="https://pabloocal.github.io/web-documents/Teaching/2026-2027-WT1-MATH190-101/2026-2027-WT1-MATH190-101_Syllabus.pdf"><b>Syllabus</b></a> and on <a href="https://canvas.ubc.ca/courses/192504">Canvas</a>, and you may ask any questions you have on <a href="https://piazza.com/class/mtepxv8qzht6l6/">Piazza</a>.
+          </p>
+        </div>
+      </div>
+
+      <div class="text">
+        <div class="pagetitle" id="Class_Notes">
+          Class Notes
+        </div>
+
+        <div class="textblock">
+          <p>
+            There will be weekly class notes posted on the <a href="#Schedule">schedule</a>. If you find mistakes (typographical or other) in the notes, or have comments, please let me know.
+          </p>
+
+          <p>
+            The following are additional materials closely related to the class notes.
+          </p>
+
+          <ul>
+            <li>
+              <a href="https://drive.google.com/file/d/1h4yV-zFbazFPl0ytlAltyrYLJ0oI__Bo/view">Angles, sine, and cosine, in the unit circle</a> by <a href="https://sites.google.com/site/cazelais/"><b>Gilles Cazelais</b></a>.
+            </li>
+
+            <li>
+              <a href="https://drive.google.com/file/d/1MRXkt3QOTZmblfrfL5MTPZ1oiEfWjwll/view">Trigonometry in the unit circle</a> by <a href="https://sites.google.com/site/cazelais/"><b>Gilles Cazelais</b></a>.
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="text">
+        <div class="pagetitle" id="Schedule">
+          Tentative Schedule
+        </div>
+
+        <div class="textblock">
+          <table class="tbl">
+            <tr>
+              <td class="time">
+                <b>Sep 7-11</b>
+              </td>
+
+              <td>
+                Sections 1.1, 1.2, 1.3, 7.2.<br/>
+                <span class="prtitle">
+                  Functions and their inverses.
+                </span>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="time">
+                <b>Sep 14-18</b>
+              </td>
+
+              <td>
+                Sections 1.4, 7.8.<br/>
+                <span class="prtitle">
+                  Trigonometric functions.
+                </span>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="time">
+                <b>Sep 21-25</b>
+              </td>
+
+              <td>
+                Sections 7.1, 7.3, 7.4, 7.5.<br/>
+                <span class="prtitle">
+                  Exponential and logarithmic functions.
+                </span>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="time">
+                <b>Sep 28-Oct 2</b>
+              </td>
+
+              <td>Sections 2.1, 2.2, 2.3.<br/>
+                <span class="prtitle">
+                  Limits and asymptotes.
+                </span>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="time">
+                <b>Oct 5-9</b>
+              </td>
+
+              <td>
+                Sections 2.5, 2.7, 3.1, 3.2, 4.5.<br/>
+                <span class="prtitle">
+                  Limits and asymptotes (continued). Definition of the derivative.
+                </span>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="time">
+                <b>Oct 12-16</b>
+              </td>
+
+              <td>
+                Sections 3.3, 3.4, 3.5.<br/>
+                <span class="prtitle">
+                  Rules of differentiation.
+                </span>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="time">
+                <b>Oct 19-23</b>
+              </td>
+
+              <td>
+                Sections 3.6, 3.7.<br/>
+                <span class="prtitle">
+                  Rules of differentiation (continued).
+                </span>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="time">
+                <b>Oct 26-30</b>
+              </td>
+
+              <td>
+                Sections 3.9.<br/>
+                <span class="prtitle">
+                  Related rates. Review.
+                </span>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="time">
+                <b>Nov 2-6</b>
+              </td>
+
+              <td>
+                Sections 4.8, 5.1.<br/>
+                <span class="prtitle">
+                  Definition of the integral. Midterm exam.
+                </span>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="time">
+                <b>Nov 9-13</b>
+              </td>
+
+              <td>
+                Sections 5.2, 5.3, 5.4, 5.5.<br/>
+                <span class="prtitle">
+                  Definite and indefinite integrals.
+                </span>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="time">
+                <b>Nov 16-20</b>
+              </td>
+
+              <td>
+                Section 5.6, 8.1.<br/>
+                <span class="prtitle">
+                  Techniques of integration.
+                </span>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="time">
+                <b>Nov 23-27</b>
+              </td>
+
+              <td>
+                Sections 8.2, 8.3.<br/>
+                <span class="prtitle">
+                  Techniques of integration (continued).
+                </span>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="time">
+                <b>Nov 30-Dec 4</b>
+              </td>
+
+              <td>
+                Sections 4.8, 5.5, 6.2, 6.5.<br/>
+                <span class="prtitle">
+                  Integration word problems.
+                </span>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="time">
+                <b>Dec 7-11</b>
+              </td>
+
+              <td>
+                Sections 1.1-1.4, 2.1-2.3, 2.5, 2.7, 3.1-3.7, 3.9, 4.8, 5.1-5.6, 6.2, 6.5, 7.1-7.5, 8.1-8.3.<br/>
+                <span class="prtitle">
+                  Review.
+                </span>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="time">
+                <b>Dec TBD</b>
+              </td>
+
+              <td>
+                Sections 1.1-1.4, 2.1-2.3, 2.5, 2.7, 3.1-3.7, 3.9, 4.8, 5.1-5.6, 6.2, 6.5, 7.1-7.5, 8.1-8.3.<br/>
+                <span class="prtitle">
+                  Final exam.
+                </span>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="text">
+        <div class="pagetitle" id="Quizzes">
+          Quizzes
+        </div>
+
+        <div class="textblock">
+          <p>
+            There will be five quizzes. These intend to be short exercises to keep you engaged with the weekly material being covered in class. The exercises featured in the quizzes will be based on exercises from the coursebook. The quizzes and their solutions will be posted here. The quizzes will happen in class, starting at 14:00 and ending at 14:10. You must work on your own, you are not allowed to work in groups.
+          </p>
+
+<!--
+          <table class="tbl">
+            <tr>
+              <td class="time">
+                <b>Sep 23</b>
+              </td>
+
+              <td>
+                <a href="https://pabloocal.github.io/web-documents/Teaching/2026-2027-WT1-MATH190-101/Quizzes/Quiz_1.pdf">Quiz 1</a>.<br/>
+                <span class="prtitle">
+                </span>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="time">
+                <b>Oct 7</b>
+              </td>
+
+              <td>
+                <a href="https://pabloocal.github.io/web-documents/Teaching/2026-2027-WT1-MATH190-101/Quizzes/Quiz_2.pdf">Quiz 2</a>.<br/>
+                <span class="prtitle">
+                </span>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="time">
+                <b>Oct 21</b>
+              </td>
+
+              <td>
+                <a href="https://pabloocal.github.io/web-documents/Teaching/2026-2027-WT1-MATH190-101/Quizzes/Quiz_3.pdf">Quiz 3</a>.<br/>
+                <span class="prtitle">
+                </span>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="time">
+                <b>Nov 4</b>
+              </td>
+
+              <td>
+                <a href="https://pabloocal.github.io/web-documents/Teaching/2026-2027-WT1-MATH190-101/Quizzes/Quiz_4.pdf">Quiz 4</a>.<br/>
+                <span class="prtitle">
+                </span>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="time">
+                <b>Nov 25</b>
+              </td>
+
+              <td>
+                <a href="https://pabloocal.github.io/web-documents/Teaching/2026-2027-WT1-MATH190-101/Quizzes/Quiz_5.pdf">Quiz 5</a>.<br/>
+                <span class="prtitle">
+                </span>
+              </td>
+            </tr>
+          </table>
+-->
+        </div>
+      </div>
+
+      <div class="text">
+        <div class="pagetitle" id="Laboratories">
+          Laboratories
+        </div>
+
+        <div class="textblock">
+          <p>
+            There will be ten laboratories and one laboratory review. These intend to allocate time for you to work on exercises with your peers while having readily available feedback. The exercises featured in the laboratories will be based on exercises from the coursebook. The laboratory assignments and their solutions will be posted here. The assignments will be due on <a href="https://canvas.ubc.ca/courses/192504">Canvas</a>, on Friday at 23:59. You are encouraged to work in groups.
+          </p>
+
+          <table class="tbl">
+            <tr>
+              <td class="time">
+                <b>Sep 14-18</b>
+              </td>
+
+              <td>
+                <a href="https://pabloocal.github.io/web-documents/Teaching/2026-2027-WT1-MATH190-101/Laboratories/Laboratory_1.pdf">Laboratory 1</a>.<br/>
+                <span class="prtitle">
+                  Deadline: Sep 18.
+                </span>
+              </td>
+            </tr>
+
+<!--
+            <tr>
+              <td class="time">
+                <b>Sep 21-25</b>
+              </td>
+
+              <td>
+                <a href="https://pabloocal.github.io/web-documents/Teaching/2026-2027-WT1-MATH190-101/Laboratories/Laboratory_2.pdf">Laboratory 2</a>.<br/>
+                <span class="prtitle">
+                  Deadline: Sep 25.
+                </span>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="time">
+                <b>Sep 28-Oct 2</b>
+              </td>
+
+              <td>
+                <a href="https://pabloocal.github.io/web-documents/Teaching/2026-2027-WT1-MATH190-101/Laboratories/Laboratory_3.pdf">Laboratory 3</a>.<br/>
+                <span class="prtitle">
+                  Deadline: Oct 2.
+                </span>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="time">
+                <b>Oct 5-8</b>
+              </td>
+
+              <td>
+                <a href="https://pabloocal.github.io/web-documents/Teaching/2026-2027-WT1-MATH190-101/Laboratories/Laboratory_4.pdf">Laboratory 4</a>.<br/>
+                <span class="prtitle">
+                  Deadline: Oct 9.
+                </span>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="time">
+                <b>Oct 12-16</b>
+              </td>
+
+              <td>
+                <a href="https://pabloocal.github.io/web-documents/Teaching/2026-2027-WT1-MATH190-101/Laboratories/Laboratory_5.pdf">Laboratory 5</a>.<br/>
+                <span class="prtitle">
+                  Deadline: Oct 16.
+                </span>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="time">
+                <b>Oct 19-23</b>
+              </td>
+
+              <td>
+                <a href="https://pabloocal.github.io/web-documents/Teaching/2026-2027-WT1-MATH190-101/Laboratories/Laboratory_6.pdf">Laboratory 6</a>.<br/>
+                <span class="prtitle">
+                  Deadline: Oct 23.
+                </span>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="time">
+                <b>Oct 26-30</b>
+              </td>
+
+              <td>
+                <a href="https://pabloocal.github.io/web-documents/Teaching/2026-2027-WT1-MATH190-101/Laboratories/Laboratory_7.pdf">Laboratory 7</a>.<br/>
+                <span class="prtitle">
+                  Deadline: Oct 30.
+                </span>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="time">
+                <b>Nov 2-6</b>
+              </td>
+
+              <td>
+                <a href="https://pabloocal.github.io/web-documents/Teaching/2026-2027-WT1-MATH190-101/Laboratories/Laboratory_8.pdf">Laboratory 8</a>.<br/>
+                <span class="prtitle">
+                  Deadline: Nov 6.
+                </span>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="time">
+                <b>Nov 16-20</b>
+              </td>
+
+              <td>
+                <a href="https://pabloocal.github.io/web-documents/Teaching/2026-2027-WT1-MATH190-101/Laboratories/Laboratory_9.pdf">Laboratory 9</a>.<br/>
+                <span class="prtitle">
+                  Deadline: Nov 20.
+                </span>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="time">
+                <b>Nov 23-27</b>
+              </td>
+
+              <td>
+                <a href="https://pabloocal.github.io/web-documents/Teaching/2026-2027-WT1-MATH190-101/Laboratories/Laboratory_10.pdf">Laboratory 10</a>.<br/>
+                <span class="prtitle">
+                  Deadline: Nov 27.
+                </span>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="time">
+                <b>Nov 30-Dec 4</b>
+              </td>
+
+              <td>
+                <a href="https://pabloocal.github.io/web-documents/Teaching/2026-2027-WT1-MATH190-101/Laboratories/Laboratory_review.pdf">Laboratory review</a>.<br/>
+                <span class="prtitle">
+                </span>
+              </td>
+            </tr>
+-->
+          </table>
+        </div>
+      </div>
+
+      <div class="text">
+        <div class="pagetitle" id="Homework">
+          Homework
+        </div>
+
+        <div class="textblock">
+          <p>
+            There will be eight homework assignments. These intend to be representative exercises helpful to follow the material being covered in class. The exercises featured in the homework will be based on exercises from the coursebook. The assignments and their due date will be posted here. The assignments will be due on <a href="https://canvas.ubc.ca/courses/192504">Canvas</a>, on Monday at 23:59. You are encouraged to work in groups.
+          </p>
+
+          <table class="tbl">
+            <tr>
+              <td class="time">
+                <b>Sep 7</b>
+              </td>
+
+              <td>
+                <a href="https://pabloocal.github.io/web-documents/Teaching/2026-2027-WT1-MATH190-101/Homework/Homework_1.pdf">Homework 1</a>.<br/>
+                <span class="prtitle">
+                  Deadline: Sep 21.
+                </span>
+              </td>
+            </tr>
+
+<!--
+            <tr>
+              <td class="time">
+                <b>Sep 14</b>
+              </td>
+
+              <td>
+                <a href="https://pabloocal.github.io/web-documents/Teaching/2026-2027-WT1-MATH190-101/Homework/Homework_2.pdf">Homework 2</a>.<br/>
+                <span class="prtitle">
+                  Deadline: Sep 28.
+                </span>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="time">
+                <b>Sep 21</b>
+              </td>
+
+              <td>
+                <a href="https://pabloocal.github.io/web-documents/Teaching/2026-2027-WT1-MATH190-101/Homework/Homework_3.pdf">Homework 3</a>.<br/>
+                <span class="prtitle">
+                  Deadline: Oct 5.
+                </span>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="time">
+                <b>Oct 5</b>
+              </td>
+
+              <td>
+                <a href="https://pabloocal.github.io/web-documents/Teaching/2026-2027-WT1-MATH190-101/Homework/Homework_4.pdf">Homework 4</a>.<br/>
+                <span class="prtitle">
+                  Deadline: Oct 19.
+                </span>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="time">
+                <b>Oct 12</b>
+              </td>
+
+              <td>
+                <a href="https://pabloocal.github.io/web-documents/Teaching/2026-2027-WT1-MATH190-101/Homework/Homework_5.pdf">Homework 5</a>.<br/>
+                <span class="prtitle">
+                  Deadline: Oct 26.
+                </span>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="time">
+                <b>Oct 19</b>
+              </td>
+
+              <td>
+                <a href="https://pabloocal.github.io/web-documents/Teaching/2026-2027-WT1-MATH190-101/Homework/Homework_6.pdf">Homework 6</a>.<br/>
+                <span class="prtitle">
+                  Deadline: Nov 2.
+                </span>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="time">
+                <b>Nov 2</b>
+              </td>
+
+              <td>
+                <a href="https://pabloocal.github.io/web-documents/Teaching/2026-2027-WT1-MATH190-101/Homework/Homework_7.pdf">Homework 7</a>.<br/>
+                <span class="prtitle">
+                  Deadline: Nov 23.
+                </span>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="time">
+                <b>Nov 9</b>
+              </td>
+
+              <td>
+                <a href="https://pabloocal.github.io/web-documents/Teaching/2026-2027-WT1-MATH190-101/Homework/Homework_8.pdf">Homework 8</a>.<br/>
+                <span class="prtitle">
+                  Deadline: Nov 30.
+                </span>
+              </td>
+            </tr>
+-->
+          </table>
+        </div>
+      </div>
+
+      <div class="text">
+        <div class="pagetitle" id="Exams">
+          Exams
+        </div>
+
+        <div class="textblock">
+          <p>
+            There will be a midterm exam and a final exam. The exercises featured in the exams will be based on exercises from the coursebook, with roughly half of them based on exercises from the quizzes, laboratories, and homerwork. The exams and their solutions will be posted here. You can find information on the UBC schedule for the final exams <a href="https://students.ubc.ca/enrolment/exams/"><b>here</b></a>.
+          </p>
+
+          <table class="tbl">
+            <tr>
+              <td class="time">
+                <b>Nov 2</b>
+              </td>
+
+              <td>
+                Midterm,<br/>
+                <span class="prtitle">IRC G3 from 14:00 to 14:50.</span>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="time">
+                <b>TBD</b>
+              </td>
+
+              <td>
+                Final exam,<br/>
+                <span class="prtitle">TBD.</span>
+              </td>
+            </tr>
+          </table>
+
+          <p>
+            The past exams for MATH 190 are archived below.
+          </p>
+
+          <ul>
+            <li>
+              The Department of Mathematics archive can be found <a href="https://oldwww.math.ubc.ca/Ugrad/pastExams/"><b>here</b></a>.
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="text">
+        <div class="pagetitle" id="Resources">
+          Resources
+        </div>
+
+        <div class="textblock">
+          <p>
+            There are many resources available for a student at UBC, I encourage you to use them and make the most out of them. Here are some materials specific to this course:
+          </p>
+
+          <ul>
+            <li>
+              The open office hours at the Math Learning Center can be found <a href="https://www.math.ubc.ca/undergraduate/advising-and-resources/drop-help/"><b>here</b></a>.
+            </li>
+
+            <li>
+              The online calculator Wolfram|Alpha can be found <a href="https://www.wolframalpha.com/"><b>here</b></a>.
+            </li>
+
+            <li>
+              The online calculator Desmos can be found <a href="https://www.desmos.com/"><b>here</b></a>.
+            </li>
+
+            <li>
+              The MATH 190 course taught by <a href="https://blogs.ubc.ca/shboroushaki/"><b>Shirin Boroushaki</b></a> in 2018 can be found <a href="https://blogs.ubc.ca/math190s101/"><b>here</b></a>.
+            </li>
+
+            <li>
+              The MATH 190 course taught by <a href="https://personal.math.ubc.ca/~colesmp/"><b>Matt Coles</b></a> in 2016 can be found <a href="https://personal.math.ubc.ca/~colesmp/teaching/M190/"><b>here</b></a>.
+            </li>
+
+            <li>
+              The MATH 190 course taught by <a href="https://personal.math.ubc.ca/~colesmp/"><b>Matt Coles</b></a> in 2015 can be found <a href="https://personal.math.ubc.ca/~colesmp/teaching/M190_2015/"><b>here</b></a>.
+            </li>
+          </ul>
+
+          <p>
+            Here are some general materials about the Department of Mathematics, the Faculty of Science, and UBC:
+          </p>
+
+          <ul>
+            <li>
+              The Frequently Asked Questions of the Department of Mathematics can be found <a href="https://www.math.ubc.ca/faqs"><b>here</b></a>.
+            </li>
+
+            <li>
+              The Frequently Asked Questions of the Faculty of Science can be found <a href="https://science.ubc.ca/students/courses-faq"><b>here</b></a>.
+            </li>
+
+            <li>
+              The Science Peer Academic Coaches can be found <a href="https://science.ubc.ca/students/spac"><b>here</b></a>.
+            </li>
+
+            <li>
+              The UBC Academic Calendar can be found <a href="https://vancouver.calendar.ubc.ca/dates-and-deadlines"><b>here</b></a>.
+            </li>
+
+            <li>
+              The UBC Wiki can be found <a href="https://wiki.ubc.ca/Main_Page"><b>here</b></a>.
+            </li>
+
+            <li>
+              The UBC support page with resources for students affected by unanticipated circumstances can be found <a href="https://students.ubc.ca/support-unanticipated-circumstances/"><b>here</b></a>.
+            </li>
+          </ul>
+
+          <p>
+            I also encourage you to form study groups with your classmates. However, please keep in mind that you will only learn how to do the exercises if you try them on your own: without trying, looking up the solutions or copying others' work is absolutely useless.
+          </p>
+        </div>
+      </div>
+
+      <div class="text">
+        <div class="pagetitle" id="Grades">
+          Grades
+        </div>
+
+        <div class="textblock">
+          <p> 
+            You can compute your grade using the calculator below. Please input the sum of your quizzes (out of 120), the sum of your laboratories (out of 40), the sum of your homework assignments (out of 80), the score of your first midterm (out of 160), and the score of your final (out of 400). Then, click "Compute grades" to see your grade (out of 100).
+          </p>
+
+          <ul style="list-style-type:none">
+            <li>
+              <label>Quizzes total score:</label> <input type="text" id="quiz" size="2">
+            </li>
+
+            <li>
+              <label>Laboratories total score:</label> <input type="text" id="lab" size="2">
+            </li>
+
+            <li>
+              <label>Homework total score:</label> <input type="text" id="homework" size="2">
+            </li>
+
+            <li>
+              <label>Midterm:</label> <input type="text" id="midterm" size="2">
+            </li>
+
+            <li>
+              <label>Final:</label> <input type="text" id="final" size="2">
+            </li>
+          </ul>
+
+          <ul style="list-style-type:none">
+            <li>
+              <button onClick="schemes()">Compute grade</button>
+            </li>
+          </ul>
+
+          <p id="result">
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!--
+<div class="footer">
+</div>
+-->
+
+</body>
+</html>
